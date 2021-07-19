@@ -34,11 +34,14 @@ body{
     padding:10px;
     border: none;
     outline: none;
-    text-align: right;
+    /* text-align: right; */
     color: hsl(183, 100%, 15%);
     font-weight: 700;
     font-size: 30px;
    margin-right: 30px;
+}
+#bill, #people{
+    text-align: right;
 }
 .billing input:hover{
     border: 2px solid hsl(183, 79%, 24%);
@@ -170,8 +173,13 @@ small{
     }
     .billing input{
         width: 100%;
-        text-align: center;
         font-size: 20px;
+    }
+    .billing input[type ='text']::placeholder{
+        font-size: 20px;
+    }
+    button{
+        padding: 12px 0px;
     }
     .tipcalculator-card{
         width: 100%;
@@ -192,8 +200,11 @@ small{
     form{
         width: 100%;
     }
+    .custom{
+        text-align: center;
+    }
     .buttons{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:repeat(2, 1fr);
     }
     .reset input{
         padding: 10px;

@@ -129,6 +129,21 @@ button:hover{
     color: hsl(0, 0%, 100%);
     font-size: 20px;
 }
+.newpeople small{
+    color: red;
+    font-size: 20px;
+}
+
+.error small{
+    visibility: visible;
+}
+input.error{
+    border: 2px solid red;
+}
+.success{
+    border: inherit;
+}
+
 span{
     display: block;
 }
@@ -148,17 +163,17 @@ span{
     border: none;
     border-radius: 5px;
     outline: none;
+    pointer-events: none;
     text-transform: uppercase;
     color: hsl(183, 100%, 15%);
     font-size: 24px;
     font-weight: 700;
     margin-top: 40px;
 }
-small{
-    visibility: hidden;
-    font-size: 20px;
+.point{
+    pointer-events: unset;
+    background-color: hsl(172, 67%, 45%);
 }
-
 @media screen and (max-width:768px) {
     .calculator-body{
         width: 100%;

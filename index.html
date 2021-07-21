@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <div class="heading">
-      <img src="images/logo.svg" alt="" />
+      <img src="images/logo.svg" alt="Splitter Logo" />
     </div>
     
     <div class="calculator-body">
@@ -23,14 +23,14 @@
           <label for="Bill">Bill</label>
           <div class="icon">
             <img src="images/icon-dollar.svg" alt="" />
-            <form action=""  id="myForm1">
-              <input type="text" name="" id="bill" placeholder="0" size="" />
+            <form id="myForm1">
+              <input type="text" name="bill" aria-label="bill" id="bill" placeholder="0" size="" />
             </form>
            
           </div>
         </div>
         <div class="space">
-          <label for="select"> Select Tip % </label>
+          <label for="percentage button"> Select Tip % </label>
           <div class="buttons">
             <button value="5" class="btn" id="btn-1">5%</button>
             <button value="10" class="btn" id="btn-2">10%</button>
@@ -38,25 +38,23 @@
             <button value="25" class="btn" id="btn-4">25%</button>
             <button value="50" class="btn" id="btn-5">50%</button>
 
-            <input type="text" class="custom" value="Custom" name="" id="" />
+            <input aria-label="Custom" type="text" class="custom" value="Custom" name="custom"/>
           </div>
         </div>
        
           <div class="numberOfPeople space">
             <div class="newpeople">
               <label for="people"> Number of People </label>
-              <small>Can't be zero</small>
+              <small></small>
             </div>
             <div class="icon">
               <img src="images/icon-person.svg" alt="" />
-              <form action="" id="myForm2">
-                <input type="text" class="input" name="people" id="people" placeholder="0" size="" />
+              <form  id="myForm2">
+                <input type="text" class="input" aria-label="number of people" name="people" id="people" placeholder="0" size="" />
               </form>
             
             </div>
           </div>
-  
-
       </div>
       <div class="tipcalculator-card">
         <div class="tip-amount">
@@ -83,7 +81,7 @@
           </div>
         </div>
         <div class="reset">
-          <input type="reset" onclick="reset()" id="" value="Reset" />
+          <input type="reset"  onclick="reset()" id="resetbtn" value="Reset" />
         </div>
       </div>
     </div>

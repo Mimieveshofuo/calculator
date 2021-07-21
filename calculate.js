@@ -2,7 +2,7 @@ const buttons = document.querySelector(".buttons");
 const tip = document.getElementById("tip");
 const total = document.getElementById("total");
 const small = document.querySelector("small");
-
+const resetbtn = document.getElementById('resetbtn')
 
 buttons.addEventListener("click", (e) => {
   let bill = document.getElementById("bill").value;
@@ -10,7 +10,8 @@ buttons.addEventListener("click", (e) => {
   let people = document.getElementById("people").value;
   if (people == 0) {
     error();
-  } else {
+  } else 
+  {
     let percent = parseFloat((btn * bill) / 100 / people);
     tip.innerHTML = `$` + percent.toFixed(2);
     let billperperson = parseFloat(bill / people);
@@ -18,14 +19,15 @@ buttons.addEventListener("click", (e) => {
     total.innerHTML = `$` + totalperperson;
     success();
   }
+  resetbtn.className = 'point'
+
 });
 function error() {
-  people.style.border = "2px solid red";
-  small.style.color = "red";
-  small.style.visibility = "visible";
+    people.className ='error'
+    small.textContent = "Can\'t be zero"
 }
 function success() {
-  people.style.border = "inherit";
+  people.className = 'success'
   small.style.visibility = "hidden";
 }
 

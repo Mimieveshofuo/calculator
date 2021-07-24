@@ -13,10 +13,13 @@
 
 <body>
   <div class="container">
-    <div class="heading">
-      <img src="images/logo.svg" alt="Splitter Logo" />
-    </div>
+    <header>
+      <div class="heading">
+        <img src="images/logo.svg" alt="Splitter Logo" />
+      </div>
+    </header>
     
+   <section>
     <div class="calculator-body">
       <div class="billing">
         <div class="space">
@@ -24,13 +27,13 @@
           <div class="icon">
             <img src="images/icon-dollar.svg" alt="" />
             <form id="myForm1">
-              <input type="text" name="bill" aria-label="bill" id="bill" placeholder="0" size="" />
+              <input type="text" name="bill" aria-label="bill" id="bill" placeholder="0" />
             </form>
            
           </div>
         </div>
         <div class="space">
-          <label for="percentage button"> Select Tip % </label>
+          <label for="percentagebtn"> Select Tip % </label>
           <div class="buttons">
             <button value="5" class="btn" id="btn-1">5%</button>
             <button value="10" class="btn" id="btn-2">10%</button>
@@ -50,7 +53,7 @@
             <div class="icon">
               <img src="images/icon-person.svg" alt="" />
               <form  id="myForm2">
-                <input type="text" class="input" aria-label="number of people" name="people" id="people" placeholder="0" size="" />
+                <input type="text" class="input" aria-label="number of people" name="people" id="people" placeholder="0" />
               </form>
             
             </div>
@@ -85,6 +88,8 @@
         </div>
       </div>
     </div>
+   </section> 
+    
   </div>
 
   <script src="calculate.js"></script>
